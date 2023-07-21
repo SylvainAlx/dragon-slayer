@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+document {
+    position: relative;
+}
+
+body {
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    background-color: #333;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Bangers', cursive;
+    color: orange;
+}
+
+#perso > h2 {
+    color: orange;
+}
+
+.hidden {
+    display: none;
+}
+
+b {
+    color:#ff5000;
+}
+em {
+    color: orange;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    /*gap: 30px;*/
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+meter {
+    color: black;
+    width: 200px;
+    height: 50px;
+}
+
+#history,
+#pv {
+    background-color: #8c897f;
+    border-radius: 5px;
+    padding: 20px;
+    width: 40%;
+    height: 350px;
+}
+
+h3 {
+        margin: 10px auto;
+    }
+
+#history {
+    overflow:scroll;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+background: orange;  
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: red;  
+}
+
+#history > p {
+    padding: 5px;
+    background-color: #BDBDBD;
+    border-radius: 5px;
+}
+
+.boutonStyle {
+    text-align: center;
+    margin: 10px auto;
+    background-color: #BDBDBD;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 200px;
+    line-height: 50px;
+    font-size: 15px;
+    
+}
+
+#mode > .boutonStyle {
+    width: 400px;
+}
+
+.boutonStyle:hover {
+    background-color: darkred;
+    color: white;
+}
+
+#facile:hover {
+    background-color: green;
+    color: white;
+}
+#normal:hover {
+    background-color: orange;
+    color: white;
+}
+#difficile:hover {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    color: orange;
+    width: 20%;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left :40%;
+}
+
+@media (max-width: 600px){
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    meter {
+        width: 100px;
+        height: 25px;
+    }
+    
+    #pv {
+        display: flex;
+        width: 400px;
+        height: 150px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #history {
+        height: 150px;
+        width: 400px;
+    }
+    
+
+    
+}

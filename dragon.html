@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="dragon.css" type="text/css" />
+    <script type="text/javascript" src="dragon.js" defer></script>
+    <title>Dragon Slayer</title>
+  </head>
+  <body>
+    <a href="dragon.html">
+      <h1>Dragon Slayer</h1>
+    </a>
+    <div class="boutonStyle" id="start">COMMENCER A JOUER</div>
+    <div id="mode" class="hidden">
+      <div class="boutonStyle" id="facile">FACILE</div>
+      <b>Dragon :</b>
+      <em>PV : 100 + 5 dés de 10 & malus d'attaque : 2 dés de 6</em>
+      <br />
+      <b>Joueur :</b>
+      <em>PV : 100 + 10 dés de 10 & bonus d'attaque : 2 dés de 6</em>
+      <div class="boutonStyle" id="normal">NORMAL</div>
+      <b>PV dragon :</b>
+      <em>100 + 10 dés de 10</em>
+      <br />
+      <b>joueur :</b>
+      <em>100 + 10 dés de 10</em>
+      <div class="boutonStyle" id="difficile">DIFFICILE</div>
+      <b>Dragon :</b>
+      <em>PV : 100 + 10 dés de 10 & bonus d'attaque : 1 dé de 6</em>
+      <br />
+      <b>Joueur :</b>
+      <em>PV : 100 + 7 dés de 10 & malus d'attaque : 1 dé de 6</em>
+    </div>
+    <main id="main" class="hidden">
+      <div id="pv">
+        <div>
+          <div class="boutonStyle" id="bouton">DÉMARRER</div>
+          <div class="boutonStyle hidden" id="reload">RECOMMENCER</div>
+        </div>
+        <div>
+          <h3 id="displayNom">PV Joueur</h3>
+          <meter
+            id="meterJoueur"
+            min="0"
+            max="100"
+            low="33"
+            high="66"
+            optimum="80"
+            value=""
+          ></meter>
+          <div id="pvJoueur"></div>
+          <h3>PV Dragon</h3>
+          <meter
+            id="meterDragon"
+            min="0"
+            max="100"
+            low="33"
+            high="66"
+            optimum="80"
+            value=""
+          ></meter>
+          <div id="pvDragon"></div>
+        </div>
+      </div>
+
+      <div id="history">
+        <h2>INFORMATIONS :</h2>
+      </div>
+    </main>
+    <footer>
+      <p>2023 - SylvainAlx</p>
+    </footer>
+  </body>
+</html>
